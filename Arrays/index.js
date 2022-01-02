@@ -49,6 +49,78 @@ var friendNames = Array.from(friends,({name})=>name);
  */
 
 var fruits3 = [...fruits];
-
 fruits3.length = 0;
-console.log(fruits3);;
+
+
+/**
+ * #5
+ * convert an array to an object
+ */
+
+const fruits4 = [...fruits];
+const fruitsObj = {...fruits4};
+
+/**
+ * #6
+ * fulfill array with data
+ */
+
+var newArray = new Array(10).fill("1");
+console.log(newArray);
+
+
+/**
+ * #7 
+ * Merge Arrays
+ */
+
+var fruits5 = [...fruits4];
+var meat = ["Poultry","beef","fish"]
+var vegetables = ["Potato","tomato","cucumber"]
+
+var food = [...fruits5,...meat,...vegetables];
+
+//merging only duplicates value
+
+var numOne = [0,2,4,6,8,8];
+var numTwo = [1,2,3,4,5,6];
+
+const duplicatedValue = [...new Set(numOne)].filter(item=>numTwo.includes(item));
+
+
+/**
+ * #8
+ * remove falsy value from an array
+ */
+
+const mixedArray = [0,"blue","",NaN,true,undefined,"white",false];
+const filteredArray = mixedArray.filter(Boolean);
+
+/**
+ * #9
+ * get random value from the Array
+ */
+
+const arr = ['blue','red','green','black'];
+const randomArr  = arr[ Math.floor(Math.random() * arr.length) ];
+console.log(randomArr);
+
+
+/**
+ * #10
+ *  reverse an array
+ * 
+ */
+
+const colors = ['blue','red','green','black'];
+const reverseColors = colors.reverse();
+
+
+/**
+ * #11
+ * sum the value in an array
+ */
+
+const val = [1,4,5,7];
+const valSum = val.reduce((x,y)=>x+y);
+console.log(valSum);
