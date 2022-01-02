@@ -49,7 +49,6 @@ var friendNames = Array.from(friends,({name})=>name);
  */
 
 var fruits3 = [...fruits];
-console.log(fruits3)
-let fruits4 = [...fruits3]
-fruits4.length = 5;
-console.log(fruits4);;
+
+fruits3.length = 0;
+console.log(fruits3);;
