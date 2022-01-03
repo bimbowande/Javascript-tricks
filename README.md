@@ -14,18 +14,19 @@ Learning basic tricks in Javascript.
  #method 1
 */
 
-  var fruits = ['banana','mango','apple','sugarcane','mango','apple']
+  let fruits = ['banana','mango','apple','sugarcane','mango','apple']
 
-  var uniqueFruits = Array.from(new Set(fruits));
+  let uniqueFruits = Array.from(new Set(fruits));
 
-// result -- [ 'banana', 'manago', 'apple', 'sugarcane' ]
+ // uniqueFruits -- [ 'banana', 'manago', 'apple', 'sugarcane' ]
 
 /*
  # method 2
 */
 
-  var uniqueFruits2 = [...new Set(fruits)];
-  // result -- [ 'banana', 'manago', 'apple', 'sugarcane' ]
+  let uniqueFruits2 = [...new Set(fruits)];
+  
+  // uniqueFruits2 -- [ 'banana', 'manago', 'apple', 'sugarcane' ]
 
 ```
 
@@ -34,8 +35,10 @@ Learning basic tricks in Javascript.
 
 ```Javascript
     var fruits2 = [...fruits];
+    
     fruits2.splice(0,2,"potato","tomato");
-    //result  ['potato', 'tomato', 'apple', 'sugarcane', 'manago', 'apple' ]
+    
+    // fruits2  ['potato', 'tomato', 'apple', 'sugarcane', 'manago', 'apple' ]
 
 ```
 
@@ -53,7 +56,8 @@ Learning basic tricks in Javascript.
   ];
   
   let friendNames = Array.from(friends,({name})=>name);
-  // result --   ['John', 'Peter', 'bimbo', 'mark', 'Esther', 'Monica' ]
+  
+  // friendNames --   ['John', 'Peter', 'bimbo', 'mark', 'Esther', 'Monica' ]
 
 
 
@@ -63,17 +67,20 @@ Learning basic tricks in Javascript.
 
 ```JavaScript
   let fruits = ['banana','manago','apple','sugarcane','manago','apple']
+  
   fruits.length = 0;
   
-  //result -- []
+  // fruits -- []
 ```
 
 5. Convert an array to an object
 
 ``` JavaScript
    let fruits = ['banana','manago','apple','sugarcane','manago','apple']
+   
    const fruitsObj = {...fruits};
-   // result --  {'0': 'banana','1': 'manago', '2': 'apple','3': 'sugarcane','4': 'manago','5': 'apple'}
+   
+   //  fruitsObj --  {'0': 'banana','1': 'manago', '2': 'apple','3': 'sugarcane','4': 'manago','5': 'apple'}
  
  ```
  
@@ -81,7 +88,8 @@ Learning basic tricks in Javascript.
 
 ```JavaScript
   let newArray = new Array(10).fill("1");
-  // result -- ['1', '1', '1', '1','1', '1', '1', '1','1', '1']
+  
+  // newArray -- ['1', '1', '1', '1','1', '1', '1', '1','1', '1']
 
 ```
 
@@ -91,8 +99,9 @@ Learning basic tricks in Javascript.
   let fruits = ['banana','manago','apple'];
   let meat = ["Poultry","beef","fish"]
   let vegetables = ["Potato","tomato","cucumber"];
-  let food = [...fruits5,...meat,...vegetables];
-  //result -- ['banana',  'manago','apple',   'sugarcane','manago',  'apple','Poultry', 'beef','fish',    'Potato','tomato',  'cucumber']
+  let food = [...fruits,...meat,...vegetables];
+  
+  // food  -- ['banana',  'manago','apple',   'sugarcane','manago',  'apple','Poultry', 'beef','fish',    'Potato','tomato',  'cucumber']
 
 ```
 
@@ -103,7 +112,7 @@ Learning basic tricks in Javascript.
     let numTwo = [1,2,3,4,5,6];
 
     const duplicatedValue = [...new Set(numOne)].filter(item=>numTwo.includes(item));
-    // result -- [ 2, 4, 6 ]
+    // duplicatedValue -- [ 2, 4, 6 ]
 
 ```
 
@@ -112,7 +121,8 @@ Learning basic tricks in Javascript.
 ```JavaScript
     const mixedArray = [0,"blue","",NaN,true,undefined,"white",false];
     const filteredArray = mixedArray.filter(Boolean);
-    //result -- [ 'blue', true, 'white' ]
+    
+    // filteredArray -- [ 'blue', true, 'white' ]
 
 ```
 
@@ -120,8 +130,9 @@ Learning basic tricks in Javascript.
 
 ```JavaScript
   const colors = ['blue','red','green','black'];
+  
   const reverseColors = colors.reverse();
-  //result -- [ 'black', 'green', 'red', 'blue' ]
+  // reverseColors  -- [ 'black', 'green', 'red', 'blue' ]
 
 ```
 
@@ -129,9 +140,10 @@ Learning basic tricks in Javascript.
 
 ``` JavaScript
   const val = [1,4,5,7];
+  
   const valSum = val.reduce((x,y)=>x+y);
   
-  //result 17
+  // valSum --  17
 ```
 
 12. Generate an array from a function Arguments
