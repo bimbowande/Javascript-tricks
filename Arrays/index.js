@@ -26,6 +26,7 @@ var fruits2 = [...fruits];
 fruits2.splice(0,2,"potato","tomato");
 
 
+
 /**
  * #3
  * map array without maps
@@ -59,6 +60,7 @@ fruits3.length = 0;
 
 const fruits4 = [...fruits];
 const fruitsObj = {...fruits4};
+console.log(fruitsObj);
 
 /**
  * #6
@@ -80,12 +82,14 @@ var vegetables = ["Potato","tomato","cucumber"]
 
 var food = [...fruits5,...meat,...vegetables];
 
+
 //merging only duplicates value
 
 var numOne = [0,2,4,6,8,8];
 var numTwo = [1,2,3,4,5,6];
 
 const duplicatedValue = [...new Set(numOne)].filter(item=>numTwo.includes(item));
+
 
 
 /**
@@ -95,6 +99,7 @@ const duplicatedValue = [...new Set(numOne)].filter(item=>numTwo.includes(item))
 
 const mixedArray = [0,"blue","",NaN,true,undefined,"white",false];
 const filteredArray = mixedArray.filter(Boolean);
+console.log(filteredArray);
 
 /**
  * #9
@@ -115,6 +120,8 @@ console.log(randomArr);
 const colors = ['blue','red','green','black'];
 const reverseColors = colors.reverse();
 
+console.log(reverseColors);
+
 
 /**
  * #11
@@ -124,3 +131,14 @@ const reverseColors = colors.reverse();
 const val = [1,4,5,7];
 const valSum = val.reduce((x,y)=>x+y);
 console.log(valSum);
+
+
+/**12 
+ * Generate an array from a function Arguments
+ */
+
+ function f() {
+    return Array.from(arguments);
+  }
+  console.log(f(1,2,4))
+  
