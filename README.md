@@ -66,7 +66,7 @@ Learning basic tricks in Javascript.
 4. Emptying an array
 
 ```JavaScript
-  let fruits = ['banana','manago','apple','sugarcane','manago','apple']
+  let fruits = ['banana','mango','apple','sugarcane','mango','apple']
   
   fruits.length = 0;
   
@@ -80,7 +80,7 @@ Learning basic tricks in Javascript.
    
    const fruitsObj = {...fruits};
    
-   //  fruitsObj --  {'0': 'banana','1': 'manago', '2': 'apple','3': 'sugarcane','4': 'manago','5': 'apple'}
+   //  fruitsObj --  {'0': 'banana','1': 'mango', '2': 'apple','3': 'sugarcane','4': 'mango','5': 'apple'}
  
  ```
  
