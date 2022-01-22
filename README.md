@@ -157,3 +157,15 @@ Learning basic tricks in Javascript.
   // result -- [1,2,4]
 
 ```
+
+13. Sorting the value in an array
+
+``` JavaScript
+ const sortNumber = (values) => {
+    if(!Array.isArray(values)){
+      return null
+    }
+    return  values.sort((a,b)=>a-b);
+  }
+
+```
