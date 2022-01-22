@@ -141,4 +141,17 @@ console.log(valSum);
     return Array.from(arguments);
   }
   console.log(f(1,2,4))
+
+
+  /** 13
+   * Sort Numbers in array */
+
+  const sortNumber = (values) => {
+    if(!Array.isArray(values)){
+      return null
+    }
+    return  values.sort((a,b)=>a-b)
+  }
+
+  console.log(sortNumber([10,4,1,4,5]));
   
