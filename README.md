@@ -27,7 +27,13 @@ Learning basic tricks in Javascript.
   let uniqueFruits2 = [...new Set(fruits)];
   
   // uniqueFruits2 -- [ 'banana', 'manago', 'apple', 'sugarcane' ]
-
+  
+  /*
+  # method 3
+  */
+  
+  uniqueArray = [];
+ fruits.forEach((value) => !uniqueArray.includes(value) ? uniqueArray.push(value) : uniqueArray )
 ```
 
 
