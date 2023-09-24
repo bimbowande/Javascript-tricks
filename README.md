@@ -1,6 +1,6 @@
 ## Javascript-tricks
 
-#Learning basic tricks in Javascript.
+# Learning basic tricks in Javascript.
 
 ## Arrays
 
